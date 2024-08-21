@@ -1,6 +1,6 @@
 body {
   align-items: center;
-  background-color: #28282B;
+  background-color: #191919;
   display: flex;
   height: 100vh;
   justify-content: center;
@@ -8,7 +8,7 @@ body {
 
 .element {
   align-items: center;
-  background-color: #28282B;
+  background-color: #191919;
   box-shadow: 
     12px 12px 16px 0 rgba(0, 0, 0, 0.25),
     -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
