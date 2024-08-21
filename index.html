@@ -1,14 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>First Web Page</title>
-<link rel="stylesheet" type="text/css" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Gallery with Filters</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
- 
 <body>
- <div class="element">
- </div>
- <p>Hello World!</p>
+
+<h1>Photo Gallery with Filters</h1>
+
+<div class="filter-container">
+  <!-- Name Filter Box -->
+  <div class="filter-box">
+    <h3>Name:</h3>
+    <label><input type="checkbox" value="john" class="filter" data-category="name"> John</label>
+    <label><input type="checkbox" value="jane" class="filter" data-category="name"> Jane</label>
+  </div>
+  
+  <!-- Decade Filter Box -->
+  <div class="filter-box">
+    <h3>Decade:</h3>
+    <label><input type="checkbox" value="1980s" class="filter" data-category="decade"> 1980s</label>
+    <label><input type="checkbox" value="1990s" class="filter" data-category="decade"> 1990s</label>
+  </div>
+
+  <!-- Location Filter Box -->
+  <div class="filter-box">
+    <h3>Location:</h3>
+    <label><input type="checkbox" value="new-york" class="filter" data-category="location"> New York</label>
+    <label><input type="checkbox" value="los-angeles" class="filter" data-category="location"> Los Angeles</label>
+  </div>
+
+  <!-- Event Filter Box -->
+  <div class="filter-box">
+    <h3>Event:</h3>
+    <label><input type="checkbox" value="wedding" class="filter" data-category="event"> Wedding</label>
+    <label><input type="checkbox" value="birthday" class="filter" data-category="event"> Birthday</label>
+  </div>
+
+  <!-- Other Filter Box -->
+  <div class="filter-box">
+    <h3>Other:</h3>
+    <label><input type="checkbox" value="outdoors" class="filter" data-category="other"> Outdoors</label>
+    <label><input type="checkbox" value="indoors" class="filter" data-category="other"> Indoors</label>
+  </div>
+</div>
+
+<div class="gallery">
+  <!-- Example images with data attributes for filtering -->
+  <img src="path-to-john-1980s.jpg" data-name="john" data-decade="1980s" data-location="new-york" data-event="wedding" data-other="outdoors">
+  <img src="path-to-jane-1990s.jpg" data-name="jane" data-decade="1990s" data-location="los-angeles" data-event="birthday" data-other="indoors">
+  <!-- Add more images as needed -->
+</div>
+
+<script src="script.js"></script>
+
 </body>
- 
 </html>
