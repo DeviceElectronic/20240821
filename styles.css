@@ -1,5 +1,6 @@
 /* General styles */
 body {
+  font-family: 'Arial', san-serif;
   align-items: center;
   background-color: #191919;
   display: flex;
