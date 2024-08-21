@@ -120,3 +120,10 @@ h1 {
   background-color: #575757;
   border-radius: 5px;
 }
+
+video {
+  width: 100%;
+  height: auto;
+  max-width: 1000px;
+  border: 2px solid #333;
+}
