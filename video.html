@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Video</title>
+  <link rel="stylesheet" href="styles.css">
+
   <style>
     /* Basic styles for the video player */
     .video-container {
@@ -17,16 +19,36 @@
       border: 2px solid #333;
     }
   </style>
-</head>
-<body>
   
-  <div class="video-container">
+</head>
+
+  <nav class="navbar">
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#index">Filtered Gallery</a></li>
+    <li><a href="#images">Images</a></li>
+    <li><a href="#video.html">Video</a></li>
+    <li><a href="#audio">Audio</a></li>
+    <li><a href="#bookmarks">Bookmarks</a></li>
+    <li><a href="misc">Miscellaneous</a></li>
+  </ul>
+</nav>
+
+<body>
+
+  <h1>Video</h1>
+  
+   <div class="video-container">
+      
     <h2>Family Home Movies</h2>
+      
     <video controls>
       <source src="https://www.dropbox.com/s/yourfileid/video.mp4?dl=1" type="video/mp4">
       Your browser does not support the video tag.
+      
     </video>
-  </div>
-
+      
+    </div>
+  
 </body>
 </html>
