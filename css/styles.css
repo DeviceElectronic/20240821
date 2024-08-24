@@ -127,3 +127,15 @@ video {
   max-width: 1000px;
   border: 2px solid #333;
 }
+
+ /* Basic styles for the video player */
+    .video-container {
+      text-align: center;
+      margin: 50px auto;
+    }
+
+    video {
+      width: 80%; /* Adjust the width as needed */
+      max-width: 1000px;
+      border: 2px solid #333;
+    }
