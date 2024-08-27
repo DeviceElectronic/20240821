@@ -114,3 +114,14 @@ main {
     text-align: center;
     color: #FFF;
 }
+
+.link-item {
+    outline: none; /* This removes the default outline */
+}
+
+/* ALTERNATE SELECTOR HIGHLIGHT FOR ACCESSIBILITY
+.link-item:focus {
+    outline: 2px solid #4070F4; /* Customizes the focus outline 
+    outline-offset: 4px;
+}
+*/
