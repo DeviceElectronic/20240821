@@ -1,28 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
-  <link rel="stylesheet" href="css/styles.css"> 
-</head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar with Indicator</title>
 
-  <nav class="navbar">
-  <ul>
-    <li><a href="home.html">Home</a></li>
-    <li><a href="index.html">Filtered Gallery</a></li>
-    <li><a href="images.html">Images</a></li>
-    <li><a href="video.html">Video</a></li>
-    <li><a href="audio.html">Audio</a></li>
-    <li><a href="bookmarks.html">Bookmarks</a></li>
-    <li><a href="misc.html">Miscellaneous</a></li>
-  </ul>
-</nav>
-
-<body>
-
-  <h1>Home</h1>
-  <h2>Test</h2>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
     
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav class="nav">
+        <ul class="nav-content">
+            <li class="nav-list">
+                <a href="#" class="link-item active">
+                    <i class='bx bxs-home link-icon'></i>
+                    <span class="link-text">Home</span>
+                </a>
+            </li>
+            <li class="nav-list">
+                <a href="#" class="link-item">
+                    <i class='bx bxs-caret-right-square link-icon'></i>
+                    <span class="link-text">Content</span>
+                </a>
+            </li>
+            <li class="nav-list">
+                <a href="#" class="link-item">
+                    <i class='bx bxs-bar-chart-square link-icon'></i>
+                    <span class="link-text">Analytics</span>
+                </a>
+            </li>
+            <li class="nav-list">
+                <a href="#" class="link-item">
+                    <i class='bx bxs-message-rounded link-icon'></i>
+                    <span class="link-text">Comments</span>
+                </a>
+            </li>
+            <li class="nav-list">
+                <a href="#" class="link-item">
+                    <i class='bx bxs-user link-icon'></i>
+                    <span class="link-text">Profile</span>
+                </a>
+            </li>
+
+            <span class="indicator"></span>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Welcome to My Website</h1>
+        <p>This is the content below the navigation bar.</p>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
 </body>
 </html>
