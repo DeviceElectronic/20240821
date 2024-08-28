@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 *{
-    margin: 0;
+    margin: 10;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
@@ -12,14 +12,14 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    background: #181C1F;
+    background: #18F;
 }
 
 nav {
-    border-radius: 12px;
+    border-radius: 20px;
     background: #181C1F;
     padding: 0 25px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     position: relative;
     margin: 20px auto; /* Centers the nav bar horizontally */
     width: fit-content; /* Ensures the nav takes up the right width */
@@ -27,7 +27,7 @@ nav {
 
 .nav-content {
     display: flex;
-    height: 120px;
+    height: 105px;
     align-items: center;
     list-style: none;
     position: relative;
@@ -50,7 +50,7 @@ nav {
 }
 
 .link-icon {
-    font-size: 38px;
+    font-size: 30px;
     color: #999;
     transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
@@ -80,33 +80,33 @@ nav {
     height: 36px;
     width: 36px;
     background-color: #4070F4;
-    border: 6px solid #181C1F;
+    border: 6px solid #18F;
     border-radius: 50%;
     transform: translateX(-50%);
-    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .indicator::before,
 .indicator::after {
     content: '';
     position: absolute;
-    bottom: -8px;
-    height: 24px;
-    width: 19px;
+    bottom: -8px;/* Sizing of the bottom of ring that surrounds 'indicator dot' - if this is poking out of the top of nav bar you can adjust this accordingly */
+    height: 24px;/* Appears to control the intensity of the curve - this can also be adjusted to 'fit' nav bar more appropriately */
+    width: 19px;/* The bigger the width the closer this 'indicator ball border ring' gets to cutting into the ball itself so you may need to watch this closely*/
 }
 
 .indicator::before {
     left: -22px;
     background-color: #181C1F;
     border-top-right-radius: 25px;
-    box-shadow: 1px -13px #181C1F;
+    box-shadow: 1px -13px #18F; /* Should match main BG*/
 }
 
 .indicator::after {
-    right: -22px;
+    right: -22px; /* Geographic location of indicator? */
     background-color: #181C1F;
-    border-top-left-radius: 25px;
-    box-shadow: -1px -13px #181C1F;
+    border-top-left-radius: 25px;/* Actual dip of the right side of indicator but not the position of it */
+    box-shadow: -1px -13px #18F;/* Should closely match main BG */
 }
 
 main {
