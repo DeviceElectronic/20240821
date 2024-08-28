@@ -110,7 +110,7 @@ nav {
 }
 
 main {
-    margin-top: 75px; /* Adds space between the nav and the content below */
+    margin-top: 15px; /* Adds space between the nav and the content below */
     padding: 20px;
     text-align: center;
     color: #FFF;
